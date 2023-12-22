@@ -32,6 +32,7 @@ fun main() = generateProjects(
         useCompressedKlibs = true
         amountOfLeafModules = 1000u
 
+        jvmMaxHeapSpace = "8g"
         kotlinVersion = "2.0.0-Beta2"
         generatedProjectDir = userHome.resolve("temp").resolve(inventProjectName())
     },
@@ -39,6 +40,7 @@ fun main() = generateProjects(
         useCompressedKlibs = false
         amountOfLeafModules = 1000u
 
+        jvmMaxHeapSpace = "8g"
         kotlinVersion = "2.0.0-Beta2"
         generatedProjectDir = userHome.resolve("temp").resolve(inventProjectName())
     },
