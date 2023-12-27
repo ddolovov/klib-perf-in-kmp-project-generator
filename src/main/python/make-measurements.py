@@ -41,7 +41,7 @@ print()
 with open(timingsFile) as fi:
   timings = [float(line.rstrip()) for line in fi]
   mean = format(statistics.mean(timings), ".2f")
-  stddev = format(statistics.stdev(timings), ".2f")
+  stddev = format(statistics.pstdev(timings), ".2f")
   print("Average value: " + mean + " +/- " + stddev)
   print()
   with open(resultFile, 'w') as fo:
